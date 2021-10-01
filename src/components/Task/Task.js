@@ -1,15 +1,15 @@
 import React from 'react'
 import StyledTask from './StyledTask'
 
-export const Task = ({task, setArrayTask, arrayTask}) => {
+export const Task = (props) => {
     const handleDelete = () => {
-        const arrayfiltered = arrayTask.filter(item => item !== `${task}`)
-        setArrayTask(arrayfiltered)
+        const arrayfiltered = props.arrayTask.filter(item => item.id !== `${props.id}`)
+        props.setArrayTask(arrayfiltered)
     }
     return (
         <StyledTask>
-            <span>{task}</span>
-            <button onClick={handleDelete}>Delete</button>
+            <span>{props.txt}</span>
+            <button onClick={handleDelete} >Delete</button>
         </StyledTask>
     )
 }

@@ -8,8 +8,10 @@ export const List = ({arrayTask, setArrayTask}) => {
             <h1>Liste des choses a faire :</h1>
             {
                 arrayTask.map(task => 
-                    <Task 
-                        task={task}
+                    <Task
+                        key={task.id}
+                        id={task.id}
+                        txt={task.txt}
                         setArrayTask={setArrayTask}
                         arrayTask={arrayTask}
                     />

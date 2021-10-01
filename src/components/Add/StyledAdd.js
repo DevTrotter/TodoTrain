@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledAdd = styled.section`
+const StyledAdd = styled.form`
     display: flex;
     flex-direction: column;
     align-items: start;

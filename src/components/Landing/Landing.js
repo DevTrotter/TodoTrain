@@ -1,16 +1,14 @@
 import {useState} from 'react'
-import { Sidebar } from '../Sidebar/Sidebar'
 import { Add } from '../Add/Add';
 import { List } from '../List/List'
-import { Link } from 'react-router-dom';
+import StyledLanding from './StyledLanding';
 
-export const Home = () => {
+export const Landing = () => {
     const [arrayTask , setArrayTask] = useState([])
     return (
-        <div>
-            <Sidebar/>
+        <StyledLanding>
             <Add arrayTask={arrayTask} setArrayTask={setArrayTask}/>
             <List arrayTask={arrayTask} setArrayTask={setArrayTask}/>
-        </div>
+        </StyledLanding>
     )
 }

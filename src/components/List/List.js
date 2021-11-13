@@ -5,7 +5,7 @@ import { Task } from '../Task/Task'
 export const List = ({arrayTask, setArrayTask}) => {
     return (
         <StyledList>
-            <h1>Liste des choses a faire :</h1>
+            <h1>Choses À Faire :</h1>
             {
                 arrayTask.map(task => 
                     <Task

@@ -7,8 +7,8 @@ export const Landing = () => {
     const [arrayTask , setArrayTask] = useState([])
     return (
         <StyledLanding>
-            <Add arrayTask={arrayTask} setArrayTask={setArrayTask}/>
             <List arrayTask={arrayTask} setArrayTask={setArrayTask}/>
+            <Add arrayTask={arrayTask} setArrayTask={setArrayTask}/>
         </StyledLanding>
     )
 }
